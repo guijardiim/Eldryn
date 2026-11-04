@@ -54,13 +54,7 @@ public class Enemy_Movement : MonoBehaviour
 
     void Chase()
     {
-        if(Vector2.Distance(transform.position, player.transform.position) <= attackRange && attackCoolDownTimer <= 0)
-        {
-            attackCoolDownTimer = attackCoolDown;
-            ChangeState(EnemyState.Attacking);
-        }
-        
-        else if (player.position.x > transform.position.x && facingDirection == -1 ||
+            if (player.position.x > transform.position.x && facingDirection == -1 ||
                 player.position.x < transform.position.x && facingDirection == 1)
             {
                 Flip();   
@@ -81,36 +75,32 @@ public class Enemy_Movement : MonoBehaviour
         if (hits.Length > 0)
         {
             player = hits [0].transform;
-        
-                    // parei aki minuto 12:04 do enemyState attack state
-        // if (collision.gameObject.CompareTag("Player"))
-        // {
-        //     if (player == null)
-        //     {
-        //     player = collision.transform;
-        //     }
             
-            ChangeState(EnemyState.Chasing);
+            if(Vector2.Distance(transform.position, player.position) < attackRange && attackCoolDownTimer <= 0)
+            {
+                attackCoolDownTimer = attackCoolDown;
+                ChangeState(EnemyState.Attacking);
+            }
+            else if (Vector2.Distance(transform.position, player.position) > attackRange)
+            {
+                ChangeState(EnemyState.Chasing); 
+            }
+        }
+        else
+        {
+            rb.linearVelocity =  Vector2.zero;
+            ChangeState(EnemyState.Idle);
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-       if (collision.gameObject.CompareTag("Player"))  
-        {
-        rb.linearVelocity = Vector2.zero;
-        
-        ChangeState(EnemyState.Idle);
-        }
-    }
     private void ChangeState(EnemyState newState) 
     { 
         if (enemyState == EnemyState.Chasing)
-            anim.SetBool("isIdle", false);
+            anim.SetBool("IsIdle", false);
         else if (enemyState == EnemyState.Chasing)
-            anim.SetBool("isChasing", false);
+            anim.SetBool("IsChasing", false);
         else if (enemyState == EnemyState.Attacking)
-            anim.SetBool("isAttacking", false);
+            anim.SetBool("IsAttacking", false);
         enemyState = newState; 
 
         anim.SetBool("IsIdle", newState == EnemyState.Idle); 
@@ -118,16 +108,19 @@ public class Enemy_Movement : MonoBehaviour
         anim.SetBool("IsAttacking", newState == EnemyState.Attacking); 
     }
 
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(detectionPoint.position, playerDetectRange);        
+    }
+
+
     public enum EnemyState
     {
         Idle, 
         Chasing,
         Attacking
     }
-
-
-
-
 
 
 
