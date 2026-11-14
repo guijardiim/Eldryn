@@ -18,20 +18,10 @@ public class Enemy_Combat : MonoBehaviour
     public int damage = 1;
     public Transform attackPoint;
     public float weaponRange;
+    public float knockbackForce;
+    public float stunTime;
     public LayerMask playerLayer;
-
-
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        // Tenta pegar o componente PlayerHealth do objeto que encostou no inimigo
-        PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
-
-        // Só aplica o dano se o objeto realmente tiver o script PlayerHealth (ou seja, se for o player)
-        if (playerHealth != null)
-        {
-            playerHealth.ChangeHealth(-damage);
-        }
-    }
+    
 
     public void Attack()    
     {
@@ -40,6 +30,7 @@ public class Enemy_Combat : MonoBehaviour
         if (hits.Length > 0)
         {
             hits[0].GetComponent<PlayerHealth>().ChangeHealth(-damage);
+            hits[0].GetComponent<PlayerMovement>().KnockBack(transform, knockbackForce, stunTime);
         }
     }
 }
