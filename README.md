@@ -3,7 +3,8 @@
 ### Um mundo. Uma missão. Sua lenda.
 
 <p align="center">
-  <img src="CAMINHO_DA_IMAGEM/eldryn-banner.png" alt="Eldryn - Banner do jogo" width="100%">
+  <img src="<img width="1672" height="941" alt="Eldryn_ Uma Lenda Pixelada" src="https://github.com/user-attachments/assets/3eb2266c-d218-4132-9670-7bf15dac371f" />
+" alt="Eldryn - Banner do jogo" width="100%">
 </p>
 
 <p align="center">
