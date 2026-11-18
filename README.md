@@ -1,9 +1,4 @@
 # ELDRYN
-
-Um RPG 2D de fantasia medieval desenvolvido com Unity.
-
-## Sobre o projeto
-
 Eldryn é um jogo de RPG 2D desenvolvido como projeto acadêmico do curso de Ciência da Computação do UNISAGRADO.
 
 O jogador controla um cavaleiro que deve enfrentar goblins que ameaçam uma cidade, explorando o cenário, combatendo inimigos e interagindo com personagens. O jogo apresenta identidade visual inspirada em RPGs clássicos, com gráficos em pixel art.
