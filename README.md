@@ -1,7 +1,6 @@
 # ELDRYN
-Eldryn é um jogo de RPG 2D desenvolvido como projeto acadêmico do curso de Ciência da Computação do UNISAGRADO.
-
-O jogador controla um cavaleiro que deve enfrentar goblins que ameaçam uma cidade, explorando o cenário, combatendo inimigos e interagindo com personagens. O jogo apresenta identidade visual inspirada em RPGs clássicos, com gráficos em pixel art.
+Eldryn é um jogo de RPG 2D desenvolvido como projeto acadêmico da disciplina de Desenvolvimento de Jogos Digitais do curso de Ciência da Computação do UNISAGRADO.
+Na aventura, o jogador assume o papel de um cavaleiro encarregado de proteger uma cidade ameaçada por goblins. Para cumprir sua missão, deve explorar diferentes cenários, enfrentar inimigos em combates e interagir com personagens ao longo da jornada. O jogo apresenta uma identidade visual inspirada nos RPGs clássicos, com cenários e personagens construídos em pixel art, resgatando a estética característica dos jogos retrô.
 
 ## Funcionalidades
 
