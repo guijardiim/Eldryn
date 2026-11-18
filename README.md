@@ -3,11 +3,6 @@
 ### Um mundo. Uma missão. Sua lenda.
 
 <p align="center">
-  <img src="<img width="1672" height="941" alt="Eldryn_ Uma Lenda Pixelada" src="https://github.com/user-attachments/assets/3eb2266c-d218-4132-9670-7bf15dac371f" />
-" alt="Eldryn - Banner do jogo" width="100%">
-</p>
-
-<p align="center">
   Um RPG 2D de fantasia medieval desenvolvido com Unity, no qual coragem e determinação serão essenciais para proteger uma cidade ameaçada por criaturas goblins.
 </p>
 
