@@ -45,12 +45,14 @@ Acesse o pacote original: [Tiny Swords - Pixel Frog](https://pixelfrog-assets.it
 
 Os créditos dos recursos visuais são atribuídos aos seus respectivos criadores.
 
+**IMPORTANTE:** o GGD (Game Design Document) está incluído na pasta "DOCS"
+
 ## 💻 Requisitos
 
 - **Sistema operacional:** Windows 10 ou Windows 11.
 - **Engine:** Unity 6000.6.0f1.
 - **Memória RAM:** 8 GB recomendados.
-- **Espaço em disco:** 
+- **Espaço em disco:** 500MB recomendados
 
 ## 🚀 Como executar o projeto
 
