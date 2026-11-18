@@ -97,7 +97,7 @@ Projeto desenvolvido por estudantes do curso de Ciência da Computação do **UN
 - Guilherme Jardim
 - Tauani Vitória Ferreira
 
-**Orientador:** Prof. Me. Luis Felipe Grael Tinós.
+**Orientador:** Prof. Me. Luis Filipe Grael Tinós.
 
 ## 🎓 Informações acadêmicas
 
